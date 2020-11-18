@@ -20,24 +20,24 @@
         </button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a href="#">
+            <a class="main-nav__item-link" href="#">
               Каталог товаров
             </a>
           </li>
           <li class="main-nav__item">
-            <a href="#">
+            <a class="main-nav__item-link" href="#">
               Вязание на заказ
             </a>
           </li>
         </ul>
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a href="#">
+            <a class="main-nav__item-link" href="#">
               Поиск по сайту
             </a>
           </li>
           <li class="main-nav__item">
-            <a href="#">
+            <a class="main-nav__item-link" href="#">
               Корзина: <span>пока пуста</span>
             </a>
           </li>
@@ -48,17 +48,17 @@
 
   <main class="page-main">
     <div class="main-catalog">
-      <h1 class="page-main__slogan">
+      <h1 class="main-catalog__slogan">
       Милые штуки ручной работы для дома
       </h1>
       <ul class="main-catalog__list">
         <li class="main-catalog__item">
-          <a href="#">
+          <a class="main-catalog__item-link" href="#">
             Предметы интерьера
           </a>
         </li>
-        <li class="header-catalog__item">
-          <a href="#">
+        <li class="main-catalog__item">
+          <a class="main-catalog__item-link" href="#">
             Детские игрушки
           </a>
         </li>
@@ -66,35 +66,35 @@
     </div>
     <section class="product-box">
       <div class="wrapper">
-        <div class="product-title">
-          <h2 class="product-title__name">
+        <div class="product-box__title">
+          <h2 class="product-box__title-name">
             Вязаные корзинки
           </h2>
-          <p class="product-title__action">
+          <p class="product-box__title-action">
             Товар недели
           </p>
         </div>
-        <div class="product-content">
-          <p class="product-content__description">
+        <div class="product-box__content">
+          <p class="product-box__content-description">
             Экологически чистая пряжа, ручная работа.
             Доступны в шести расцветках и трех размерах.
           </p>
-          <dl class="product-content__list">
-            <dt class="product-content__item">Цвет:</dt>
-            <dd class="product-content__item">"Тиффании"/серый</dd>
-            <dt class="product-content__item">Диаметр:</dt>
-            <dd class="product-content__item">25 см</dd>
-            <dt class="product-content__item">Высота:</dt>
-            <dd class="product-content__item">15 см</dd>
+          <dl class="product-box__content-list">
+            <dt class="product-box__content-item">Цвет:</dt>
+            <dd class="product-box__content-item">"Тиффании"/серый</dd>
+            <dt class="product-box__content-item">Диаметр:</dt>
+            <dd class="product-box__content-item">25 см</dd>
+            <dt class="product-box__content-item">Высота:</dt>
+            <dd class="product-box__content-item">15 см</dd>
           </dl>
         </div>
-        <div class="product-image">
+        <div class="product-box__image">
           <img src="https://via.placeholder.com/260x315" width="260" height="315"
           alt="Три вязаных корзинки разного размера">
         </div>
-        <div class="product-buy">
-          <p class="product-buy__title">Цена: <span class="product-buy__price">990 руб.</span></p>
-          <button class="product-buy__button button" type="button">Заказать</button>
+        <div class="product-box__buy">
+          <p class="product-box__buy-title">Цена: <span class="product-buy__price">990 руб.</span></p>
+          <a class="product-box__buy-link button" href="#">Заказать</a>
         </div>
       </div>
     </section>
@@ -113,8 +113,8 @@
         </ul>
       </div>
     </section>
-    <section class="reviews">
-      <div class="wrapper slider">
+    <section class="reviews slider">
+      <div class="wrapper">
         <h2 class="reviews__title">Отзывы</h2>
         <div class="reviews__list slider__list">
           <blockquote class="reviews__item slider__item">
@@ -126,7 +126,7 @@
               а также набирают больше лайков!
             </p>
             <cite class="reviews__user-name">Анастасия Красильникова</cite>
-            <span class="reviews__user-contacts">@misssssiskras</span>
+            <span class="reviews__user-contacts"><a class="reviews__user-link" href="#">@misssssiskras</a></span>
           </blockquote>
           <blockquote class="reviews__item slider__item">
             <p class="reviews__description">
@@ -137,7 +137,7 @@
               а также набирают больше лайков!
             </p>
             <cite class="reviews__user-name">Екатерина Красильникова</cite>
-            <span class="reviews__user-contacts">@misssssiskras2</span>
+            <span class="reviews__user-contacts"><a class="reviews__user-link" href="#">@misssssiskras2</a></span>
           </blockquote>
         </div>
       </div>
@@ -145,7 +145,7 @@
         <button class="reviews__navigation-button"><span class="visually-hidden">Предыдущий отзыв</span></button>
         <button class="reviews__navigation-button"><span class="visually-hidden">Следующий отзыв</span></button>
       </div>
-      <button class="button" type="button">Написать</button>
+      <a class="reviews__write-feedback-link button" href="#">Написать</a>
     </section>
     <section class="contacts">
       <div class="wrapper">
@@ -155,7 +155,7 @@
         <dl class="contacts__list">
           <dt class="contacts__item">e-mail:</dt>
           <dd class="contacts__item">
-            info@mimimishkashop.ru
+            <a class="contacts__email-link" href="#">@mimimishkashop.ru</a>
           </dd>
           <dt class="contacts__item">адрес</dt>
           <dd class="contacts__item">
@@ -167,8 +167,9 @@
         <div class="contacts__map">
           <img src="https://via.placeholder.com/320x454" width="320" height="454"
             alt="Карта Санкт-Петербурга в районе ДЛТ">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1605729829018!5m2!1sru!2sru" width="320" height="454" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </div>
-        <button class="button" type="button">Напишите нам</button>
+        <a class="contacts__feedback-link button" href="#">Напишите нам</a>
       </div>
     </section>
   </main>
