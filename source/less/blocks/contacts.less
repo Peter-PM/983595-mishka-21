@@ -1,0 +1,39 @@
+.contacts {
+  padding-top: 38px;
+  padding-bottom: 39px;
+  border-top: 2px solid @nav-link-border-color;
+}
+
+.contacts__wrapper {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.contacts__title {
+  .font-size(18px, 700, 30px);
+
+}
+
+.contacts__list {
+  display: grid;
+  grid-template-columns: 76px 1fr;
+}
+
+.contacts__item {
+  margin: 0;
+  padding-bottom: 25px;
+}
+
+.contacts__item-text {
+  .font-size(14px, 400, 30px)
+}
+
+.contacts__email-link {
+  .link-style-reset()
+}
+
+.contacts__feedback-link {
+  .font-size-link();
+  .button-text-style();
+  margin-top: 42px;
+}
