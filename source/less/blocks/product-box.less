@@ -23,16 +23,22 @@
 
 .product-box__content-list {
   display: grid;
-  grid-template-columns: 99px 1fr;
+  grid-template-columns: 39% 1fr;
   width: 100%;
+  margin-top: 20px;
+  margin-bottom: 28px;
 }
 
 .product-box__content-item {
   vertical-align: baseline;
   margin: 0;
-  border-bottom: 1px solid  @nav-link-border-color;
-  height: 39px;
+  border-bottom: 1px solid @border-line-color;
+  min-height: 39px;
   .font-size(15px, 400, 39px);
+}
+
+.product-box__image {
+  text-align: center;
 }
 
 .product-box__buy-title {
