@@ -3,6 +3,22 @@
   background-position: 50% -15%;
   background-repeat: no-repeat;
   background-size: auto;
+  background-color: @basic-gray--little-darker;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("/img/background/hero-desktop.png");
+    background-position: 50% 0;
+    border-top: 1px solid @basic-black--opasity;
+    margin-top: -44px;
+  }
+}
+
+.main-catalog__wrapper {
+  @media (min-width: @tablet-width) {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
 }
 
 .main-catalog__slogan {
@@ -12,17 +28,74 @@
   width: 260px;
   padding-bottom: 120px;
   padding-top: 73px;
+
+  @media (min-width: @tablet-width) {
+    .font-size(43px, 700, 50px);
+    min-width: 500px;
+    padding-top: 155px;
+    padding-bottom: 372px;
+  }
 }
+
+.main-catalog__list {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    width: 100%;
+  }
+}
+
+.main-catalog__item {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 41px;
+    height: 62px;
+    background-repeat: no-repeat;
+  }
+  &--lamp::after {
+    top: 22px;
+    right: 36px;
+    background-image: url("/img/icons/lamp.svg");
+
+    @media (min-width: @tablet-width) {
+      top: auto;
+      bottom: 27px;
+    }
+  }
+  &--toy::after {
+    top: 22px;
+    right: 27px;
+    width: 62px;
+    background-image: url("/img/icons/toy.svg");
+
+    @media (min-width: @tablet-width) {
+      top: auto;
+      bottom: 27px;
+      right: 33px;
+    }
+  }
+  @media (min-width: @tablet-width) {
+    width: 50%;
+  }
+}
+
 
 .main-catalog__item-link {
   display: block;
-  height: 79px;
+  min-height: 79px;
   padding-top: 24px;
   padding-left: 30px;
   padding-right: 160px;
   text-decoration: none;
   color: @basic-white;
   .font-size(19px, 700, 24px);
+
+  @media (min-width: @tablet-width) {
+    .font-size(20px, 700, 30px);
+    min-height: 95px;
+  }
 }
 
 .main-catalog__item--green {
