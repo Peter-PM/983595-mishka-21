@@ -11,37 +11,53 @@
 <body class="body">
 
   <header class="page-header">
-    <div class="wrapper">
-      <a class="page-header__logo" href="#">
-        <img src="/img/logo/mishka-logo-mobile.svg" width="86" height="36"
-          alt="Логотип магазина Мишка">
-      </a>
-      <button class="page-header__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
+    <div class="page-header__wrapper">
       <nav class="main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
+        <div class="main-nav__header">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <a class="main-nav__logo" href="#">
+            <img class="main-nav__image-mobile" src="/img/logo/mishka-logo-mobile.svg" width="86" height="36" alt="Логотип магазина Мишка">
+            <img class="main-nav__image-tablet" src="/img/logo/mishka-logo-tablet.svg" width="113" height="45" alt="Логотип магазина Мишка">
+            <img class="main-nav__image-desktop" src="/img/logo/mishka-logo-desktop.svg" width="149" height="72" alt="Логотип магазина Мишка">
+          </a>
+        </div>
+        <ul class="main-nav__list main-nav__list--basic-items">
+          <li class="main-nav__item main-nav__item--catalog main-nav__item--tablet">
             <a class="main-nav__item-link" href="catalog.html">
               Каталог товаров
             </a>
           </li>
-          <li class="main-nav__item">
+          <li class="main-nav__item main-nav__item--order main-nav__item--tablet">
             <a class="main-nav__item-link" href="form.html">
               Вязание на заказ
             </a>
           </li>
-          <li class="main-nav__item">
+          <li class="main-nav__item main-nav__item--new">
             <a class="main-nav__item-link" href="#">
-              Поиск по сайту
+              Новые поступления
             </a>
           </li>
-          <li class="main-nav__item">
+          <li class="main-nav__item main-nav__item--sale">
             <a class="main-nav__item-link" href="#">
+              Распродажа
+            </a>
+          </li>
+        </ul>
+        <ul class="main-nav__list main-nav__list--search-basket">
+          <li class="main-nav__item main-nav__item--search">
+            <a class="main-nav__item-link main-nav__item-link--before main-nav__item-link--search" href="#">
+              <span class="main-nav__item-text">Поиск по сайту</span>
+            </a>
+          </li>
+          <li class="main-nav__item main-nav__item--basket">
+            <a class="main-nav__item-link main-nav__item-link--before main-nav__item-link--basket" href="#">
               Корзина: <span>пока пуста</span>
             </a>
           </li>
         </ul>
+        <p class="main-nav__advantage">Бесплатная доставка по России</p>
       </nav>
     </div>
   </header>

@@ -1,5 +1,69 @@
 .main-nav {
   background-color: @basic-white;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.main-nav__header {
+  text-align: center;
+}
+
+.main-nav__toggle {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav__logo {
+  display: block;
+  margin: 0 auto;
+}
+
+.main-nav__image-mobile {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav__image-tablet {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    padding-top: 22px;
+    padding-bottom: 20px;
+  }
+}
+
+.main-nav__image-desktop {
+  display: none;
+}
+
+.main-nav__list {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+}
+
+.main-nav__list--basic-items {
+  @media (min-width: @tablet-width) {
+    order: 2;
+  }
+}
+
+.main-nav__item--catalog {
+  border-top: 1px solid @border-line-color;
 }
 
 .main-nav__item {
@@ -7,13 +71,96 @@
   padding-bottom: 27px;
   padding-left: 76px;
   border-bottom: 1px solid @border-line-color;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    border: none;
+  }
 }
 
-.main-nav__item:first-child {
-  border-top: 1px solid @border-line-color;
+.main-nav__item--tablet {
+  @media (min-width: @tablet-width) {
+    min-width: 167px;
+    padding-top: 20px;
+    .font-size(15px, 700, 24px)
+  }
 }
 
 .main-nav__item-link {
   .link-style-reset();
   .font-size(17px, 700, 24px);
+}
+
+.main-nav__item--sale {
+  display: none;
+}
+
+.main-nav__item--new {
+  display: none;
+}
+
+.main-nav__item--search {
+  @media (min-width: @tablet-width) {
+    width: 82px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    border-left: 1px solid @border-line-color;
+  }
+}
+
+.main-nav__item-text {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav__item--basket {
+  @media (min-width: @tablet-width) {
+    min-width: 264px;
+    text-align: right;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    border-left: 1px solid @border-line-color;
+  }
+}
+
+.main-nav__item-link--before {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 21px;
+    height: 18px;
+    top: 2px;
+    left: -46px;
+    background-repeat: no-repeat;
+  }
+}
+
+.main-nav__item-link--basket::before {
+  background-image: url(/img/icons/basket.svg);
+
+  @media (min-width: @tablet-width) {
+    left: -55px;
+  }
+}
+
+.main-nav__item-link--search::before {
+  background-image: url(/img/icons/search.svg);
+
+  @media (min-width: @tablet-width) {
+    left: 30px;
+  }
+}
+
+.main-nav__advantage {
+  .font-size(15px, 400, 24px);
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    order: 3;
+    padding-top: 20px;
+  }
 }
