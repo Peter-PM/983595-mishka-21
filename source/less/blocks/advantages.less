@@ -3,7 +3,17 @@
   padding-right: 30px;
   padding-left: 30px;
   padding-top: 31px;
-  border-top: 2px solid @border-line-color;
+
+  &::after {
+    content: "";
+    background-image: url("../img/mask/zigzag-line-mobile.svg");
+    background-repeat: repeat-x;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 6px;
+  }
 
   @media (min-width: @tablet-width) {
     padding-right: 50px;
@@ -14,7 +24,7 @@
 
     &::after {
       content: "";
-      background-image: url("/img/mask/zigzag-line-desktop.svg");
+      background-image: url("../img/mask/zigzag-line-desktop.svg");
       background-repeat: repeat-x;
       position: absolute;
       top: 0;
