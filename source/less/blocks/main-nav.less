@@ -13,7 +13,13 @@
   text-align: center;
 
   @media (min-width: @tablet-width) {
-    width: 50%;
+    width: 40%;
+  }
+
+  @media (min-width: @desktop-width) {
+    order: 2;
+    width: auto;
+    margin: 0 auto;
   }
 }
 
@@ -30,6 +36,15 @@
 .main-nav__logo {
   display: block;
   margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 114px;
+    margin-left: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 150px;
+  }
 }
 
 .main-nav__image-mobile {
@@ -46,10 +61,19 @@
     padding-top: 22px;
     padding-bottom: 20px;
   }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
 }
 
 .main-nav__image-desktop {
   display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    padding-top: 10px;
+  }
 }
 
 .main-nav__list {
@@ -65,10 +89,21 @@
     width: 50%;
     order: 2;
   }
+
+  @media (min-width: @desktop-width) {
+    order: 1;
+    margin-right: auto;
+    width: 40%;
+  }
 }
 
 .main-nav__item--catalog {
   border-top: 1px solid @border-line-color;
+
+  @media (min-width: @desktop-width) {
+    width: 183px;
+    margin-right: 35px;
+  }
 }
 
 .main-nav__item {
@@ -88,7 +123,11 @@
   @media (min-width: @tablet-width) {
     min-width: 167px;
     padding-top: 20px;
-    .font-size(15px, 700, 24px);
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 
@@ -97,18 +136,59 @@
   .font-size(17px, 700, 24px);
 }
 
+.main-nav__item-link--basic-items {
+  @media (min-width: @tablet-width) {
+    .font-size(15px, 700, 24px);
+  }
+
+  @media (min-width: @desktop-width) {
+    .font-size(17px, 700, 24px);
+  }
+}
+
+.main-nav__list--new-sale {
+  @media (min-width: @desktop-width) {
+    order: 4;
+    width: 40%;
+  }
+}
+
 .main-nav__item--sale {
   display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    padding-top: 20px;
+  }
 }
 
 .main-nav__item--new {
   display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    width: 183px;
+    margin-right: 35px;
+    padding-top: 20px;
+  }
+}
+
+.main-nav__item-link--new-sale {
+  @media (min-width: @desktop-width) {
+    .font-size(15px, 700, 24px);
+  }
 }
 
 .main-nav__list--search-basket {
   @media (min-width: @tablet-width) {
     display: flex;
     margin-left: auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    order: 3;
+    width: 40%;
+    justify-content: flex-end;
   }
 }
 
@@ -175,5 +255,9 @@
     display: block;
     order: 3;
     padding-top: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    order: 5;
   }
 }
