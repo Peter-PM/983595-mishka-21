@@ -11,6 +11,10 @@
 
 .main-nav__header {
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    width: 50%;
+  }
 }
 
 .main-nav__toggle {
@@ -58,6 +62,7 @@
 
 .main-nav__list--basic-items {
   @media (min-width: @tablet-width) {
+    width: 50%;
     order: 2;
   }
 }
@@ -100,12 +105,20 @@
   display: none;
 }
 
+.main-nav__list--search-basket {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    margin-left: auto;
+  }
+}
+
 .main-nav__item--search {
   @media (min-width: @tablet-width) {
     width: 82px;
     padding-top: 32px;
     padding-bottom: 32px;
     border-left: 1px solid @basic-black--opasity;
+    border-right: 1px solid @basic-black--opasity;
   }
 }
 
@@ -121,7 +134,6 @@
     text-align: right;
     padding-top: 32px;
     padding-bottom: 32px;
-    border-left: 1px solid @basic-black--opasity;
   }
 }
 
