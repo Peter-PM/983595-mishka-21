@@ -1,3 +1,14 @@
+.contacts {
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-right: 50px;
+    padding-left: 50px;
+    margin-top: 161px;
+    margin-bottom: 105px;
+  }
+}
+
 .contacts__wrapper {
   position: relative;
   padding-left: 30px;
@@ -24,16 +35,39 @@
       background-image: url("../img/mask/zigzag-line-desktop.svg");
       height: 17px;
     }
+
+    @media (min-width: @desktop-width) {
+      display: none;
+    }
   }
 }
 
 .contacts__title {
   .font-size(18px, 700, 30px);
   padding-top: 38px;
+  display: flex;
+  justify-content: space-between;
 
   @media (min-width: @tablet-width) {
     .font-size(43px, 700, 50px);
     padding-top: 68px;
+
+    &::after {
+      content: "";
+      display: block;
+      margin-top: -25px;
+      width: 47px;
+      height: 81px;
+      background-image: url("../img/icons/flag.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    .font-size(53px, 700, 57px);
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    padding-left: 64px;
   }
 }
 
@@ -43,6 +77,11 @@
 
   @media (min-width: @tablet-width) {
     grid-template-columns: repeat(2, 76px 1fr);
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 76px 1fr;
+    padding-left: 125px;
   }
 }
 
@@ -58,6 +97,13 @@
 
 .contacts__map {
   text-align: center;
+
+  @media (min-width: @desktop-width) {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
 }
 
 .contacts__map-mobile {
@@ -72,6 +118,18 @@
   @media (min-width: @tablet-width) {
     display: block;
   }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.contacts__map-desktop {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
 }
 
 .contacts__email-link {
@@ -83,6 +141,7 @@
   .button-text-style();
   margin-top: 42px;
   margin-bottom: 39px;
+  display: block;
 
   @media (min-width: @tablet-width) {
     margin-top: 55px;
@@ -90,5 +149,8 @@
     width: 230px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  @media (min-width: @desktop-width) {
   }
 }
