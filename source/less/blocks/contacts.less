@@ -1,26 +1,15 @@
 .contacts {
+  position: relative;
+
   @media (min-width: @desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding-right: 50px;
     padding-left: 50px;
-    margin-top: 161px;
-    margin-bottom: 105px;
+    padding-top: 71px;
+    padding-bottom: 105px;
   }
-}
 
-.contacts__wrapper {
-  position: relative;
-  padding-left: 30px;
-  padding-right: 30px;
-
-  @media (min-width: @tablet-width) {
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-}
-
-.contacts__wrapper--top {
   &::after {
     content: "";
     background-image: url("../img/mask/zigzag-line-mobile.svg");
@@ -35,10 +24,18 @@
       background-image: url("../img/mask/zigzag-line-desktop.svg");
       height: 17px;
     }
+  }
 
-    @media (min-width: @desktop-width) {
-      display: none;
-    }
+}
+
+.contacts__wrapper {
+  position: relative;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }
 
@@ -65,9 +62,14 @@
 
   @media (min-width: @desktop-width) {
     .font-size(53px, 700, 57px);
-    flex-direction: row-reverse;
-    justify-content: flex-end;
-    padding-left: 64px;
+    position: relative;
+    padding-left: 125px;
+
+    &::after {
+      position: absolute;
+      left: 0;
+      bottom: -10px;
+    }
   }
 }
 
@@ -136,6 +138,14 @@
   .link-style-reset();
 }
 
+.contacts__wrapper--bottom {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+}
+
 .contacts__feedback-link {
   .font-size-link();
   .button-text-style();
@@ -149,5 +159,10 @@
     width: 230px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    margin-left: 125px;
   }
 }
