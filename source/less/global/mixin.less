@@ -21,3 +21,48 @@
   text-align: center;
   text-transform: uppercase;
 }
+
+.wrapper-padding(@top, @left, @right, @bottom) {
+  padding-top: @top;
+  padding-left: @left;
+  padding-right: @right;
+  padding-bottom: @bottom;
+  max-width: 1150px;
+}
+
+.wrapper-padding-mobile() {
+  padding-top: 30px;
+  padding-left: 30px;
+}
+
+.wrapper-padding-desktop() {
+  padding-top: 50px;
+  padding-left: 50px;
+  max-width: 1150px;
+}
+
+.after-zigzag-line() {
+  content: "";
+  background-repeat: repeat-x;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+}
+
+.after-zigzag-line-mobile() {
+  background-image: url("../img/mask/zigzag-line-mobile.svg");
+  height: 6px;
+}
+
+.after-zigzag-line-tablet() {
+  background-image: url("../img/mask/zigzag-line-tablet.svg");
+  height: 17px;
+}
+
+.after-zigzag-line-desktop() {
+  background-image: url("../img/mask/zigzag-line-desktop.svg");
+  height: 23px;
+  right: 50px;
+  width: calc(100% - 100px);
+}
