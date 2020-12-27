@@ -22,17 +22,20 @@
   text-transform: uppercase;
 }
 
-.wrapper-padding(@top, @left, @right, @bottom) {
-  padding-top: @top;
-  padding-left: @left;
-  padding-right: @right;
-  padding-bottom: @bottom;
-  max-width: 1150px;
-}
-
-.wrapper-padding-mobile() {
+.wrapper-padding() {
   padding-top: 30px;
   padding-left: 30px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 50px;
+    padding-left: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 50px;
+    padding-left: 50px;
+    max-width: 1150px;
+  }
 }
 
 .wrapper-padding-desktop() {
