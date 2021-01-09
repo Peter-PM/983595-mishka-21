@@ -23,23 +23,21 @@
 }
 
 .wrapper-padding() {
-  padding-top: 30px;
+  padding-right: 30px;
   padding-left: 30px;
 
   @media (min-width: @tablet-width) {
-    padding-top: 50px;
+    padding-right: 50px;
     padding-left: 50px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 50px;
-    padding-left: 50px;
-    max-width: 1150px;
+    max-width: 1050px;
   }
 }
 
 .wrapper-padding-desktop() {
-  padding-top: 50px;
+  padding-right: 50px;
   padding-left: 50px;
   max-width: 1150px;
 }
@@ -51,21 +49,18 @@
   top: 0;
   right: 0;
   width: 100%;
-}
-
-.after-zigzag-line-mobile() {
   background-image: url("../img/mask/zigzag-line-mobile.svg");
   height: 6px;
-}
 
-.after-zigzag-line-tablet() {
-  background-image: url("../img/mask/zigzag-line-tablet.svg");
-  height: 17px;
-}
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/mask/zigzag-line-tablet.svg");
+    height: 17px;
+  }
 
-.after-zigzag-line-desktop() {
-  background-image: url("../img/mask/zigzag-line-desktop.svg");
-  height: 23px;
-  right: 50px;
-  width: calc(100% - 100px);
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/mask/zigzag-line-desktop.svg");
+    height: 23px;
+    right: 50px;
+    width: calc(100% - 100px);
+  }
 }

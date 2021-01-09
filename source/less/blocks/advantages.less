@@ -1,12 +1,9 @@
 .advantages__wrapper {
+  .wrapper-padding();
   position: relative;
-  padding-right: 30px;
-  padding-left: 30px;
   padding-top: 31px;
 
   @media (min-width: @tablet-width) {
-    padding-right: 50px;
-    padding-left: 50px;
     padding-top: 72px;
     padding-bottom: 83px;
     border-top: none;
@@ -14,15 +11,6 @@
 
   &::after {
     .after-zigzag-line();
-    .after-zigzag-line-mobile();
-
-    @media (min-width: @tablet-width) {
-      .after-zigzag-line-tablet();
-    }
-
-    @media (min-width: @desktop-width) {
-      .after-zigzag-line-desktop();
-    }
   }
 }
 
@@ -37,6 +25,7 @@
     .font-size(53px, 700, 57px);
     padding-left: 175px;
     padding-right: 58px;
+    letter-spacing: 1px;
   }
 }
 
