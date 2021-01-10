@@ -16,13 +16,7 @@
 
 .contacts__wrapper {
   position: relative;
-  padding-left: 30px;
-  padding-right: 30px;
-
-  @media (min-width: @tablet-width) {
-    padding-left: 50px;
-    padding-right: 50px;
-  }
+  .wrapper-padding();
 }
 
 .contacts__title {
@@ -126,6 +120,16 @@
 
 .contacts__email-link {
   .link-style-reset();
+  padding-bottom: 3px;
+  border-bottom: 1px solid @basic-green--lighter;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 4px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 5px;
+  }
 }
 
 .contacts__wrapper--bottom {
