@@ -166,6 +166,10 @@
 .main-nav__item--sale {
   display: none;
 
+  @media (min-width: @tablet-width) {
+    width: 167px;
+  }
+
   @media (min-width: @desktop-width) {
     display: block;
     padding-top: 20px;
@@ -177,7 +181,7 @@
 
   @media (min-width: @desktop-width) {
     display: block;
-    width: 183px;
+    width: 167px;
     margin-right: 35px;
     padding-top: 20px;
   }
@@ -262,7 +266,7 @@
 .main-nav__advantage {
   .font-size(15px, 400, 24px);
   display: none;
-  max-width: 50%;
+  max-width: 30%;
   background-color: @basic-gray--little-darker;
 
   @media (min-width: @tablet-width) {
@@ -270,6 +274,7 @@
     order: 3;
     padding-top: 20px;
     padding-right: 50px;
+
   }
 
   @media (min-width: @desktop-width) {
