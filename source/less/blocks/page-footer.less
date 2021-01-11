@@ -1,19 +1,18 @@
 .page-footer {
   background-color: @basic-gray;
+  max-width: 1150px;
+  margin: 0 auto
 }
 
 .page-footer__wrapper {
-  padding-left: 30px;
+  .wrapper-padding();
   padding-top: 25px;
-  padding-right: 30px;
   padding-bottom: 30px;
 
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-between;
-    padding-left: 50px;
     padding-top: 51px;
-    padding-right: 50px;
     padding-bottom: 58px;
   }
 }
