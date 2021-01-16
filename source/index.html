@@ -14,16 +14,16 @@
     <div class="page-header__wrapper">
       <nav class="main-nav">
         <div class="main-nav__header">
-          <button class="main-nav__toggle" type="button">
+          <button class="main-nav__toggle main-nav__toggle--cross" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
           <a class="main-nav__logo" href="#">
-            <img class="main-nav__image-mobile" src="./img/logo/mishka-logo-mobile.svg" width="86" height="36"
+            <picture>
+              <source media="(min-width: 1150px)" srcset="./img/index/page-header/mishka-logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="./img/index/page-header/mishka-logo-tablet.svg">
+              <img class="main-nav__image" src="./img/index/page-header/mishka-logo-mobile.svg" width="86" height="36"
               alt="Логотип магазина Мишка">
-            <img class="main-nav__image-tablet" src="./img/logo/mishka-logo-tablet.svg" width="113" height="45"
-              alt="Логотип магазина Мишка">
-            <img class="main-nav__image-desktop" src="./img/logo/mishka-logo-desktop.svg" width="149" height="72"
-              alt="Логотип магазина Мишка">
+            </picture>
           </a>
         </div>
         <ul class="main-nav__list main-nav__list--basic-items">
@@ -101,7 +101,7 @@
         <div class="product-box__content">
           <p class="product-box__content-description">
             Экологически чистая пряжа, ручная работа.
-            Доступны в шести расцветках и трех размерах.
+            Доступны в шести расцветках, и трех размерах.
           </p>
           <dl class="product-box__content-list">
             <dt class="product-box__content-item">Цвет:</dt>
@@ -113,10 +113,12 @@
           </dl>
         </div>
         <div class="product-box__image">
-          <img class="product-box__image-mobile" src="./img/content/triple-set-mobile.png" width="100%" height="315"
+          <picture>
+            <source media="(min-width: 1150px)" srcset="./img/index/product-box/triple-set-desktop.jpg 1x, ./img/index/product-box/triple-set-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="./img/index/product-box/triple-set-tablet.jpg 1x, ./img/index/product-box/triple-set-tablet@2x.jpg 2x">
+            <img class="product-box__image" src="./img/index/product-box/triple-set-mobile.jpg" srcset="./img/index/product-box/triple-set-mobile@2x.jpg 2x" width="100%" height="315"
             alt="Три вязаных корзинки разного размера">
-          <img class="product-box__image-tablet" src="./img/content/triple-set-tablet.png" width="100%" height="404"
-            alt="Три вязаных корзинки разного размера">
+          </picture>
         </div>
         <div class="product-box__buy">
           <p class="product-box__buy-title">Цена: <span class="product-buy__price">990 руб.</span></p>
@@ -207,12 +209,15 @@
         </dl>
       </div>
       <div class="contacts__map">
-        <img class="contacts__map-mobile" src="./img/map/map-mobile@1x.png" width="100%" height="454"
-          alt="Карта Санкт-Петербурга в районе ДЛТ">
-        <img class="contacts__map-tablet" src="./img/map/map-tablet@1x.png" width="100%" height="457"
-          alt="Карта Санкт-Петербурга в районе ДЛТ">
-        <img class="contacts__map-desktop" src="./img/map/map-desktop@1x.jpg" width="100%" height="457"
-          alt="Карта Санкт-Петербурга в районе ДЛТ">
+        <picture>
+          <source media="(min-width: 1150px)"
+            srcset="./img/index/contacts/map-desktop.jpg 1x, ./img/index/contacts/map-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)"
+            srcset="./img/index/contacts/map-tablet.jpg 1x, ./img/index/contacts/map-tablet@2x.jpg 2x">
+          <img class="contacts__map-image" src="./img/index/contacts/map-mobile.jpg"
+            srcset="./img/index/contacts/map-mobile@2x.jpg 2x" width="100%" height="454"
+            alt="Карта Санкт-Петербурга в районе ДЛТ">
+        </picture>
       </div>
       <div class="contacts__wrapper contacts__wrapper--bottom">
         <a class="contacts__feedback-link button" href="#">Напишите нам</a>

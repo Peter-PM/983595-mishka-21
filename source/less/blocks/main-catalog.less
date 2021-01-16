@@ -1,15 +1,23 @@
 .main-catalog {
-  background-image: url("../img/background/hero-mobile.png");
+  background-image: url("../img/index/main-catalog/bg-mobile.jpg");
   background-position: 50% -15%;
   background-repeat: no-repeat;
-  background-size: auto;
   background-color: @basic-gray--little-darker;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/index/main-catalog/bg-mobile@2x.jpg");
+    background-size: auto 373px;
+  }
+
   @media (min-width: @tablet-width) {
-    background-image: url("../img/background/hero-desktop.png");
+    background-image: url("../img/index/main-catalog/bg-desktop.jpg");
     background-position: 50% 0;
     margin-top: -45px;
-    //background-size: cover;
+    background-size: auto 748px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index/main-catalog/bg-desktop@2x.jpg");
+    }
   }
 }
 
@@ -35,8 +43,9 @@
   @media (min-width: @tablet-width) {
     .font-size(43px, 700, 50px);
     min-width: 500px;
-    padding-top: 155px;
-    padding-bottom: 372px;
+    min-height: 351px;
+    padding-top: 159px;
+    letter-spacing: 2px;
   }
 
   @media (min-width: @desktop-width) {
@@ -102,6 +111,7 @@
   text-decoration: none;
   color: @basic-white;
   .font-size(19px, 700, 24px);
+  letter-spacing: 1px;
 
   @media (min-width: @tablet-width) {
     .font-size(20px, 700, 30px);

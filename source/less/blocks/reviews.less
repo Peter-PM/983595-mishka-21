@@ -4,13 +4,20 @@
   padding-bottom: 45px;
 
   @media (min-width: @tablet-width) {
+    min-height: 457px;
     padding-top: 82px;
     padding-bottom: 45px;
     margin-bottom: 68px;
     display: grid;
     grid-template-columns: 1fr 175px;
-    background-image: url("../img/background/review-tablet.png");
+    background-image: url("../img/index/review/review.jpg");
     background-repeat: no-repeat;
+    background-size: auto 457px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index/review/review@2x.jpg");
+
+    }
   }
 
   @media (min-width: @desktop-width) {
