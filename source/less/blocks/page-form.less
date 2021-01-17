@@ -1,0 +1,235 @@
+.page-form__title {
+  .font-size(27px, 700, 30px);
+  background-color: @basic-gray;
+  text-align: center;
+  padding-top: 73px;
+  padding-bottom: 73px;
+
+  @media (min-width: @tablet-width) {
+    .font-size(43px, 700, 50px);
+  }
+}
+
+.page-form__wrapper {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.page-form__group-wrapper {
+  @media (min-width: @tablet-width) {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+.page-form__group-style {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  border: none;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 50px;
+    padding-right: 50px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+}
+
+.page-form__description {
+  .font-size(13px, 400, 24px);
+  padding-top: 17px;
+  padding-bottom: 29px;
+
+  @media (min-width: @tablet-width) {
+    .font-size(17px, 400, 30px);
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+.page-form__input {
+  border: none;
+  background-color: inherit;
+}
+
+.page-form__legend {
+  .font-size(17px, 700, 17px);
+  text-transform: uppercase;
+  color: @basic-green;
+
+  @media (min-width: @tablet-width) {
+    min-width: 169px;
+  }
+}
+
+.page-form__legend--type {
+  margin-bottom: 18px;
+}
+
+.page-form__group-style--product-color {
+  margin-top: 19px;
+
+  @media (min-width: @tablet-width) {
+    background-color: @basic-gray;
+  }
+}
+
+.page-form__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-form__container--color {
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.page-form__legend--color {
+  margin-bottom: 15px;
+}
+
+.page-form__group-style--user-name {
+  margin-top: 20px;
+}
+
+.page-form__legend--user-name {
+  padding-bottom: 29px;
+}
+
+.page-form__input-label {
+  .font-size(17px, 700, 18px);
+
+  @media (min-width: @tablet-width) {
+    .font-size(19px, 700, 18px);
+  }
+}
+
+.page-form__group-style--bggray {
+  @media (min-width: @tablet-width) {
+    background-color: @basic-gray;
+  }
+}
+
+.page-form__input-label--radio {
+  position: relative;
+  padding-left: 60px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  margin: auto 0;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    border: 2px solid @basic-black--light;
+    border-radius: 50%;
+  }
+}
+
+.page-form__input[type="radio"]:checked + .page-form__input-label--radio::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 12px;
+  top: 50%;
+  transform: translate(0, -50%);
+  background-color: @basic-green;
+  border-radius: 50%;
+}
+
+.page-form__input-label--checkbox {
+  position: relative;
+  padding-left: 60px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    border: 2px solid @basic-black--light;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    border: 2px solid @basic-black--light;
+    border-top-style: none;
+    border-right-style: none;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.2s;
+  }
+
+  @media (min-width: @tablet-width) {
+    min-width: 35%;
+  }
+}
+
+.page-form__input[type="checkbox"]:checked + .page-form__input-label--checkbox::before {
+  width: 20px;
+  height: 10px;
+  left: 8px;
+  top: 20px;
+  border: 2px solid @basic-black;
+  border-top-style: none;
+  border-right-style: none;
+  transform: rotate(-45deg);
+}
+
+.page-form__textarea::placeholder,
+.page-form__input::placeholder {
+  color: @basic-black--opasity-3;
+}
+
+.page-form__input--name {
+  width: 100%;
+  min-height: 52px;
+  border-bottom: 2px solid @basic-black;
+  margin-bottom: 22px;
+}
+
+.page-form__textarea {
+  width: calc(100% - 34px);
+  border: 2px solid @basic-black;
+  padding: 17px;
+  margin-top: 22px;
+  min-height: 108px;
+}
+
+.page-form__remark {
+  .font-size(14px, 400, 16px);
+  margin-top: 17px;
+  margin-bottom: 30px;
+}
+
+.page-form__button {
+  .font-size(17px, 700, 17px);
+  min-width: 260px;
+  margin: 0 auto;
+  text-transform: uppercase;
+}
