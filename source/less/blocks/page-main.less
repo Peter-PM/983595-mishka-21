@@ -6,14 +6,24 @@
 .page-main__mask {
   position: relative;
 
-  &::after {
-    content: "";
-    background-image: url("../img/mask/zigzag-fill-desktop.svg");
-    background-repeat: repeat-x;
-    position: absolute;
-    width: 100%;
-    height: 24px;
-    bottom: 0;
-    left: 0;
+  @media (min-width: @tablet-width) {
+    &::after {
+      content: "";
+      background-image: url("../img/mask/zigzag-fill-desktop.svg");
+      background-repeat: repeat-x;
+      position: absolute;
+      width: 100%;
+      height: 24px;
+      bottom: -12px;
+      left: 0;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &::after {
+      background-image: url("../img/mask/zigzag-fill-desktop2.svg");
+      height: 34px;
+      bottom: -17px;
+    }
   }
 }
