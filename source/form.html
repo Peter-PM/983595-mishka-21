@@ -67,18 +67,17 @@
     </div>
   </header>
 
-  <main class="page-form">
-    <h1 class="page-form__title">Вязание на заказ</h1>
-    <div class="page-main__mask"></div>
+  <main class="page-form-main">
+    <h1 class="page-form-main__title">Вязание на заказ</h1>
     <section>
-      <div class="page-form__wrapper">
-        <p class="page-form__description">Мы будем рады воплотить в жизнь
+      <div class="page-form-main__wrapper">
+        <p class="page-form-main__description">Мы будем рады воплотить в жизнь
           ваши пожелания! Заполните простую
           форму заказа и мы свяжемся с вами,
           чтобы уточнить детали.</p>
-        <form method="get" action="https://echo.htmlacademy.ru">
-          <div class="page-form__group-style page-form__group-style--product-type">
-            <p class="page-form__legend page-form__legend--type">Тип</p>
+        <form class="" method="get" action="https://echo.htmlacademy.ru">
+          <fieldset class="page-form__group-style page-form__group-style--product-type">
+            <legend class="page-form__legend page-form__legend--type">Тип</legend>
             <div class="page-form__container page-form__container--type">
 
               <input id="product-type-accessory" class="page-form__input visually-hidden" type="radio"
@@ -92,10 +91,10 @@
                 игрушка</label>
 
             </div>
-          </div>
+          </fieldset>
           <section class="page-form__bggray">
-            <div class="page-form__group-style page-form__group-style--product-color">
-              <p class="page-form__legend page-form__legend--color">Цвет</p>
+            <fieldset class="page-form__group-style page-form__group-style--product-color">
+              <legend class="page-form__legend page-form__legend--color">Цвет</legend>
               <div class="page-form__container page-form__container--color">
 
                 <input id="white" class="page-form__input visually-hidden" name="white" type="checkbox" checked>
@@ -117,11 +116,11 @@
                 <label for="orange" class="page-form__input-label page-form__input-label--checkbox">Оранжевый</label>
 
               </div>
-            </div>
+            </fieldset>
           </section>
 
-          <div class="page-form__group-style page-form__group-style--user-name">
-            <p class="page-form__legend page-form__legend--user-name">ФИО</p>
+          <fieldset class="page-form__group-style page-form__group-style--user-name">
+            <legend class="page-form__legend page-form__legend--user-name">ФИО</legend>
             <div class="page-form__container page-form__container--user-name">
               <div class="page-form__user-name-container">
                 <label for="name" class="page-form__input-label page-form__input-label--user-name">Имя: </label>
@@ -140,32 +139,32 @@
                   placeholder="Отчество, если желаете" required>
               </div>
             </div>
-          </div>
+          </fieldset>
           <section class="page-form__bggray">
-            <div class="page-form__group-style page-form__group-style--phone">
-              <p class="page-form__legend">Тел</p>
+            <fieldset class="page-form__group-style page-form__group-style--phone">
+              <legend class="page-form__legend page-form__legend--phone">Тел</legend>
               <label class="visually-hidden" for="phone">Телефон для связи</label>
               <input class="page-form__input page-form__input--name" name="phone" type="tel" id="phone"
                 placeholder="+7 XXX XXX XX XX*" pattern="[+]{1}[0-9]{1} [0-9]{3} [0-9]{7}" required>
-            </div>
-            <div class="page-form__group-style page-form__group-style--email">
-              <p class="page-form__legend">E-mail</p>
+            </fieldset>
+            <fieldset class="page-form__group-style page-form__group-style--email">
+              <legend class="page-form__legend page-form__legend--email">E-mail</legend>
               <label class="visually-hidden" for="email">Адрес электронной почты</label>
               <input class="page-form__input page-form__input--name" name="email" type="email" id="email"
                 placeholder="Ваш Email*" required>
-            </div>
+            </fieldset>
           </section>
 
-          <div class="page-form__group-style">
-            <p class="page-form__legend page-form__legend--textarea">Доп</p>
+          <fieldset class="page-form__group-style">
+            <legend class="page-form__legend page-form__legend--textarea">Доп</legend>
             <label class="visually-hidden" for="textarea">Дополнительные комментарии</label>
             <textarea class="page-form__textarea" name="textarea" id="textarea" cols="30" rows="5"
               placeholder="Опишите вcе ваши пожелания к заказу"></textarea>
-          </div>
-          <div class="page-form__group-style page-form__group-style--button">
+          </fieldset>
+          <fieldset class="page-form__group-style page-form__group-style--button">
             <p class="page-form__remark">*Поля обязательны для заполнения</p>
             <button class="button button--page-form" type="submit">Отправить заказ</button>
-          </div>
+          </fieldset>
         </form>
       </div>
     </section>
@@ -203,7 +202,6 @@
       </div>
     </div>
   </footer>
-
 </body>
 
 </html>
