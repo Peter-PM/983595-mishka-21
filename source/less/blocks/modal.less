@@ -6,6 +6,9 @@
   height: 100vh;
   background-color: rgba(255, 255, 255, 0.9);
   z-index: 10;
+}
+
+.modal--off {
   display: none;
 }
 
@@ -21,7 +24,7 @@
   padding-top: 28px;
   text-align: center;
   background-color: @basic-white;
-  box-shadow: 0px 5px 10px rgba(0, 1, 1, 0.25);
+  box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
 }
 
 .modal__title {
@@ -32,38 +35,4 @@
 .modal__description {
   .font-size(15px, 400, 30px);
   margin-bottom: 31px;
-}
-
-.modal__form {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.modal__size-select {
-  width: 78px;
-  height: 48px;
-  margin-bottom: 31px;
-  border: 2px solid  rgba(0, 1, 1, 0.25);
-}
-.modal__size-select:hover {
-  border: 2px solid red;
-}
-input[type="radio"]:checked {
-  background-color: salmon;
-}
-
-input[type="radio"]:checked ~ .modal__size-select {
-  border: 2px solid red;
-}
-
-.modal__button {
-  .font-size(17px, 700, 16px);
-  width: 100%;
-  padding-top: 18px;
-  padding-bottom: 18px;
-  text-transform: uppercase;
-  background-color: @basic-green;
-  border: @basic-green;
-  color: @basic-white;
 }
