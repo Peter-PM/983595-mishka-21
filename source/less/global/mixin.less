@@ -1,0 +1,67 @@
+.font-size (@size, @weight, @line-height) {
+  font-size: @size;
+  font-weight: @weight;
+  line-height: @line-height;
+}
+
+.link-style-reset() {
+  text-decoration: none;
+  color: @basic-black;
+}
+
+.font-size-link() {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.button-text-style() {
+  text-decoration: none;
+  color: @basic-black;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.wrapper-padding() {
+  padding-right: 30px;
+  padding-left: 30px;
+
+  @media (min-width: @tablet-width) {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 1050px;
+    margin: 0 auto;
+  }
+}
+
+.wrapper-padding-desktop() {
+  padding-right: 50px;
+  padding-left: 50px;
+  max-width: 1050px;
+}
+
+.after-zigzag-line() {
+  content: "";
+  background-repeat: repeat-x;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  background-image: url("../img/index/contacts/zigzag-line-mobile.svg");
+  height: 6px;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/index/contacts/zigzag-line-tablet.svg");
+    height: 17px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/index/contacts/zigzag-line-desktop.svg");
+    height: 23px;
+    right: 50px;
+    width: calc(100% - 100px);
+  }
+}
