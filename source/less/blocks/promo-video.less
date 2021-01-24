@@ -1,0 +1,109 @@
+.promo-video {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+  }
+}
+
+.promo-video__title {
+  .font-size(17px, 700, 24px);
+  padding-top: 22px;
+  padding-left: 90px;
+  padding-bottom: 26px;
+  padding-right: 12px;
+  border: 1px solid @basic-white--darcker;
+
+  @media (min-width: @tablet-width) {
+    .font-size(20px, 700, 24px);
+    padding-top: 40px;
+    padding-left: 65px;
+    padding-right: 0;
+    padding-bottom: 24px;
+    border: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 95px;
+    padding-left: 0;
+    padding-bottom: 27px;
+  }
+}
+
+.promo-video__title--tablet {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+}
+
+.promo-video__title--mobile {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.promo-video__content {
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+
+  @media (min-width: @desktop-width) {
+    min-width: 682px;
+  }
+}
+
+.promo-video__description-box {
+  padding-left: 33px;
+  padding-right: 32px;
+  padding-bottom: 33px;
+  border: 1px solid @basic-white--darcker;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 41px;
+    padding-right: 41px;
+    padding-bottom: 45px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: column;
+    padding-left: 78px;
+    padding-right: 56px;
+    padding-bottom: 59px;
+    margin-left: -2px;
+  }
+}
+
+.promo-video__description {
+  .font-size(13px, 400, 24px);
+  padding-top: 34px;
+  padding-bottom: 41px;
+
+  @media (min-width: @tablet-width) {
+    .font-size(15px, 400, 30px);
+    padding-top: 0;
+    padding-bottom: 41px;
+  }
+}
+
+.promo-video__link {
+  .link-style-reset();
+  .font-size(18px, 700, 16px);
+  text-transform: uppercase;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    .font-size(17px, 700, 16px);
+  }
+}
+
+/*
+@media (min-width: @tablet-width) {
+}
+
+@media (min-width: @desktop-width) {
+}
+*/

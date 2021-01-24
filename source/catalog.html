@@ -3,75 +3,175 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Мишка</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="body">
 
   <header class="page-header">
-    <div class="wrapper">
-      <a class="page-header__logo" href="index.html">
-        <img src="https://via.placeholder.com/86x36" width="86" height="36"
-          alt="Логотип магазина Мишка">
-      </a>
+    <div class="page-header__wrapper">
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__item-link" href="#">
+        <div class="main-nav__header">
+          <button class="main-nav__toggle main-nav__toggle--cross" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <a class="main-nav__logo" href="#">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="./img/index/page-header/mishka-logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="./img/index/page-header/mishka-logo-tablet.svg">
+              <img class="main-nav__image" src="./img/index/page-header/mishka-logo-mobile.svg" width="86" height="36"
+              alt="Логотип магазина Мишка">
+            </picture>
+          </a>
+        </div>
+        <ul class="main-nav__list main-nav__list--basic-items">
+          <li class="main-nav__item main-nav__item--catalog">
+            <a class="main-nav__item-link main-nav__item-link--basic-items" href="catalog.html">
               Каталог товаров
             </a>
           </li>
-          <li class="main-nav__item">
-            <a class="main-nav__item-link" href="form.html">
+          <li class="main-nav__item main-nav__item--order">
+            <a class="main-nav__item-link main-nav__item-link--basic-items" href="form.html">
               Вязание на заказ
             </a>
           </li>
         </ul>
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__item-link" href="#">
-              Поиск по сайту
+        <ul class="main-nav__list main-nav__list--new-sale">
+          <li class="main-nav__item main-nav__item--new">
+            <a class="main-nav__item-link main-nav__item-link--new-sale" href="#">
+              Новые поступления
             </a>
           </li>
-          <li class="main-nav__item">
-            <a class="main-nav__item-link" href="#">
+          <li class="main-nav__item main-nav__item--sale">
+            <a class="main-nav__item-link main-nav__item-link--new-sale" href="#">
+              Распродажа
+            </a>
+          </li>
+        </ul>
+        <ul class="main-nav__list main-nav__list--search-basket">
+          <li class="main-nav__item main-nav__item--search">
+            <a class="main-nav__item-link main-nav__item-link--before main-nav__item-link--search" href="#">
+              <span class="main-nav__item-text">Поиск по сайту</span>
+            </a>
+          </li>
+          <li class="main-nav__item main-nav__item--basket">
+            <a class="main-nav__item-link main-nav__item-link--before main-nav__item-link--basket" href="#">
               Корзина: <span>пока пуста</span>
             </a>
           </li>
         </ul>
+        <p class="main-nav__advantage">Бесплатная доставка по России</p>
       </nav>
-    </div>
+
   </header>
 
-  <main class="page-main">
+  <main class="catalog-page">
+    <h1 class="catalog-page__title">
+      Каталог товаров
+    </h1>
+    <div class="catalog-page__wrapper">
+      <section class="catalog">
+        <ul class="catalog__list">
+          <li class="catalog__item product-card">
+            <div class="product-card__image-box">
+              <picture>
+                <source media="(min-width: 1150px)"
+                  srcset="./img/catalog/product-card/photo-1-desktop.jpg 1x, ./img/catalog/product-card/photo-1-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="./img/catalog/product-card/photo-1-tablet.jpg 1x, ./img/catalog/product-card/photo-1-tablet@2x.jpg 2x">
+                <img class="product-card__image" src="./img/catalog/product-card/photo-1-mobile.jpg"
+                  srcset="./img/catalog/product-card/photo-1-mobile@2x.jpg 2x" alt="Вязаный зайчик в голубой пижамке">
+              </picture>
+            </div>
+            <div class="product-card__description">
+              <h2 class="product-card__title">Зайчик-попрыгайчик</h2>
+              <span class="product-card__feature">Рост 30 см, вес 200 г</span>
+              <p class="product-card__price">1 200 руб.</p>
+            </div>
+          </li>
+
+          <li class="catalog__item product-card">
+            <div class="product-card__image-box">
+              <picture>
+                <source media="(min-width: 1150px)"
+                  srcset="./img/catalog/product-card/photo-2-desktop.jpg 1x, ./img/catalog/product-card/photo-2-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="./img/catalog/product-card/photo-2-tablet.jpg 1x, ./img/catalog/product-card/photo-2-tablet@2x.jpg 2x">
+                <img class="product-card__image" src="./img/catalog/product-card/photo-2-mobile.jpg"
+                  srcset="./img/catalog/product-card/photo-2-mobile@2x.jpg 2x" alt="Вязаный зайчик в голубой пижамке">
+              </picture>
+            </div>
+            <div class="product-card__description">
+              <h2 class="product-card__title">Корзинка для белья</h2>
+              <span class="product-card__feature">Диаметр 15 см, высота 10 см</span>
+              <p class="product-card__price">690 руб.</p>
+            </div>
+          </li>
+
+          <li class="catalog__item product-card">
+            <div class="product-card__image-box">
+              <picture>
+                <source media="(min-width: 1150px)"
+                  srcset="./img/catalog/product-card/photo-3-desktop.jpg 1x, ./img/catalog/product-card/photo-3-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="./img/catalog/product-card/photo-3-tablet.jpg 1x, ./img/catalog/product-card/photo-3-tablet@2x.jpg 2x">
+                <img class="product-card__image" src="./img/catalog/product-card/photo-3-mobile.jpg"
+                  srcset="./img/catalog/product-card/photo-3-mobile@2x.jpg 2x" alt="Вязаный зайчик в голубой пижамке">
+              </picture>
+            </div>
+            <div class="product-card__description">
+              <h2 class="product-card__title">Большая корзинка для игрушек</h2>
+              <span class="product-card__feature">Диаметр 30 см, высота 30 см</span>
+              <p class="product-card__price">1 500 руб.</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="promo-video">
+        <h2 class="promo-video__title  promo-video__title--mobile">Процесс производства</h2>
+        <video  class="promo-video__content" src="#" poster="./img/catalog/promo-video/video-desktop.jpg"></video>
+        <div class="promo-video__description-box">
+          <h2 class="promo-video__title promo-video__title--tablet">Процесс производства</h2>
+          <p class="promo-video__description">По просьбам наших любимых фолловеров
+            мы сняли для вас подробное видео
+             о том, как появляются наши товары.</p>
+          <a class="button promo-video__link" href="#">Сделать заказ</a>
+        </div>
+      </section>
+    </div>
   </main>
 
   <footer class="page-footer">
-    <div class="wrapper">
+    <div class="page-footer__wrapper">
       <div class="page-footer__logo">
         <a class="page-footer__logo-link" href="#">
-          <img src="https://via.placeholder.com/86x36" width="86" height="36" alt="Логотип магазина Мишка">
+          <img src="./img/index/page-footer/logo-footer.svg" width="102" height="34" alt="Логотип магазина Мишка">
         </a>
       </div>
-      <div class="page-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в инстаграмме</a>
+      <div class="page-footer__social">
+        <ul class="page-footer__social-list">
+          <li class="page-footer__social-item">
+            <a class="page-footer__social-link page-footer__social-link--instagram"
+              href="https://www.instagram.com/htmlacademy"><span>Мы в инстаграмме</span></a>
           </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в фейсбуке</a>
+          <li class="page-footer__social-item">
+            <a class="page-footer__social-link page-footer__social-link--facebook"
+              href="https://www.facebook.com/htmlacademy"><span>Мы в фейсбуке</span></a>
           </li>
-          <li class="social__item">
-            <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">Мы в твиттере</a>
+          <li class="page-footer__social-item">
+            <a class="page-footer__social-link page-footer__social-link--twitter"
+              href="https://twitter.com/htmlacademy_ru"><span>Мы в твиттере</span></a>
           </li>
         </ul>
       </div>
       <div class="page-footer__copyright">
-        <b class="copyright__text">Разработано:</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <b class="page-footer__copyright-text">Разработано</b>
+        <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img class="page-footer__copyright-image " src="./img/index/page-footer/htmlacademy.svg" width="27" height="34" alt="Логотип HTML-академии">
+          <span class="visually-hidden">HTML Academy</span>
+        </a>
       </div>
     </div>
   </footer>
