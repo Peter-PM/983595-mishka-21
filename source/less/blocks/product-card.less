@@ -26,6 +26,7 @@
 
   @media (min-width: @tablet-width) {
     flex-grow: 1;
+    min-width: 50%;
   }
 
   @media (min-width: @desktop-width) {
@@ -76,7 +77,13 @@
 
 .product-card__price {
   .font-size(15px, 700, 24px);
+  position: relative;
   padding-top: 22px;
   border-top: 1px solid @basic-white--darcker;
   margin-top: auto;
+}
+
+.product-card__basket {
+  position: absolute;
+  right: 0;
 }
