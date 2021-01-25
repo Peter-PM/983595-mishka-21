@@ -1,0 +1,61 @@
+.page-form-main__title {
+  position: relative;
+  .font-size(27px, 700, 30px);
+  letter-spacing: 1px;
+  background-color: @basic-gray;
+  text-align: center;
+  padding-top: 73px;
+  padding-bottom: 73px;
+
+  @media (min-width: @tablet-width) {
+    .font-size(43px, 700, 50px);
+    letter-spacing: 1px;
+    margin-top: -44px;
+    padding-top: 101px;
+    padding-bottom: 87px;
+    background-image: url("../img/mask/zigzag-fill-desktop.svg");
+    background-repeat: repeat-x;
+    background-position: 50% 100%;
+  }
+
+  @media (min-width: @desktop-width) {
+    .font-size(53px, 700, 57px);
+    letter-spacing: 1.5px;
+    padding-bottom: 113px;
+    background-image: url("../img/mask/zigzag-fill-desktop2.svg");
+    background-repeat: repeat-x;
+    background-position: 50% 100%;
+  }
+}
+
+.page-form-main__description {
+  .font-size(13px, 400, 24px);
+  padding-top: 17px;
+  padding-bottom: 29px;
+
+  @media (min-width: @tablet-width) {
+    .font-size(17px, 400, 30px);
+    padding-top: 51px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 35px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 700px;
+    margin: 0 auto;
+    padding-top: 100px;
+  }
+}
+
+.page-form-main__wrapper {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 55px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 50px;
+  }
+}
