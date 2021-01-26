@@ -25,12 +25,7 @@
   margin-bottom: -3px;
 
   @media (min-width: @tablet-width) {
-    flex-grow: 1;
     min-width: 50%;
-  }
-
-  @media (min-width: @desktop-width) {
-    flex-grow: 0;
   }
 }
 
@@ -81,6 +76,18 @@
   padding-top: 22px;
   border-top: 1px solid @basic-white--darcker;
   margin-top: auto;
+
+  @media (min-width: @tablet-width) {
+    .font-size(17px, 700, 24px);
+  }
+}
+
+.product-card__price--last {
+  margin-top: 17px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: auto;
+  }
 }
 
 .product-card__basket {
