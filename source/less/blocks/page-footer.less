@@ -24,14 +24,26 @@
   }
 }
 
+.page-footer__social {
+  border-bottom: 1px solid @basic-gray--darcker;
+
+  @media (min-width: @tablet-width) {
+    border-bottom: none;
+  }
+}
+
 .page-footer__social-list {
   display: flex;
-  padding-bottom: 27px;
-  border-bottom: 1px solid @basic-gray--darcker;
+  justify-content: space-between;
+  width: 143px;
+  margin: 0 auto;
+  padding-bottom: 23px;
   text-align: center;
+  align-items: center;
 
   @media (min-width: @tablet-width) {
     padding-bottom: 0;
+    border-bottom: none;
   }
 }
 
@@ -40,11 +52,16 @@
 }
 
 .page-footer__copyright {
-  padding-top: 29px;
+  padding-top: 22px;
   text-align: center;
+  width: 182px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
 
   @media (min-width: @tablet-width) {
     padding-top: 0;
+    margin: 0;
   }
 }
 

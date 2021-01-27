@@ -1,0 +1,33 @@
+.modal-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.modal-form__size-select {
+  .font-size(17px, 700, 17px);
+  width: 78px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 31px;
+  border: 2px solid @basic-black--opasity;
+
+  @media (min-width: @tablet-width) {
+    width: 108px;
+  }
+}
+
+.modal-form__button {
+  .font-size(17px, 700, 16px);
+  width: 100%;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  text-transform: uppercase;
+  background-color: @basic-green;
+  border: @basic-green;
+  color: @basic-white;
+}
+
+.modal-form__input:checked + .modal-form__size-select {
+  border-color: @basic-green;
+}

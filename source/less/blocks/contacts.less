@@ -7,7 +7,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding-top: 71px;
-    padding-bottom: 105px;
+    padding-bottom: 104px;
   }
 
   &::after {
@@ -23,19 +23,19 @@
 .contacts__title {
   position: relative;
   .font-size(18px, 700, 30px);
-  padding-top: 38px;
-  padding-bottom: 25px;
+  padding-top: 44px;
+  padding-bottom: 28px;
 
   @media (min-width: @tablet-width) {
     .font-size(43px, 700, 50px);
-    padding-top: 68px;
+    padding-top: 86px;
     padding-bottom: 49px;
 
     &::after {
       content: "";
       position: absolute;
-      bottom: 35px;
-      right: 5px;
+      bottom: 42px;
+      right: 3px;
       width: 47px;
       height: 81px;
       background-image: url("../img/index/contacts/flag.svg");
@@ -46,13 +46,14 @@
   @media (min-width: @desktop-width) {
     .font-size(53px, 700, 57px);
     position: relative;
-    padding-left: 125px;
-    padding-bottom: 30px;
+    padding-left: 124px;
+    padding-bottom: 35px;
+    padding-top: 102px;
 
     &::after {
       position: absolute;
       left: 13px;
-      bottom: 25px;
+      bottom: 29px;
     }
   }
 }
@@ -74,22 +75,55 @@
 
 .contacts__item {
   margin: 0;
-  padding-bottom: 25px;
+  padding-bottom: 30px;
   .font-size(14px, 400, 30px);
 
   @media (min-width: @tablet-width) {
     .font-size(17px, 400, 30px);
   }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 31px;
+  }
 }
 
 .contacts__map {
+  position: relative;
   text-align: center;
+  padding-top: 32px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 19px;
+  }
 
   @media (min-width: @desktop-width) {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 3;
+    padding-top: 24px;
+  }
+}
+
+.contacts__map-image {
+  width: 100%;
+}
+
+.contacts__map-pin {
+  position: absolute;
+  top: 47%;
+  left: 55%;
+  transform: translate(-56%, -53%);
+
+  @media (min-width: @tablet-width) {
+    top: 44%;
+    left: 52%;
+    transform: translate(-54%, -52%);
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 46%;
+    transform: translate(-53%, -52%);
   }
 }
 
@@ -103,7 +137,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-bottom: 5px;
+    padding-bottom: 8px;
   }
 }
 
@@ -118,20 +152,21 @@
 .contacts__feedback-link {
   .font-size-link();
   .button-text-style();
-  margin-top: 42px;
+  margin-top: 38px;
   margin-bottom: 39px;
   display: block;
 
   @media (min-width: @tablet-width) {
-    margin-top: 55px;
+    .font-size(17px, 700, 20px);
+    margin-top: 52px;
     margin-bottom: 57px;
-    width: 230px;
+    width: 226px;
     margin-left: auto;
     margin-right: auto;
   }
 
   @media (min-width: @desktop-width) {
     margin: 0;
-    margin-left: 60px;
+    margin-left: 55px;
   }
 }

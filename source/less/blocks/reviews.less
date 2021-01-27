@@ -1,13 +1,13 @@
 .reviews__wrapper {
   .wrapper-padding();
   padding-top: 58px;
-  padding-bottom: 45px;
+  padding-bottom: 46px;
 
   @media (min-width: @tablet-width) {
-    min-height: 457px;
+    min-height: 360px;
     padding-top: 82px;
     padding-bottom: 45px;
-    margin-bottom: 68px;
+    margin-bottom: 36px;
     display: grid;
     grid-template-columns: 1fr 175px;
     background-image: url("../img/index/review/review.jpg");
@@ -21,6 +21,8 @@
 
   @media (min-width: @desktop-width) {
     background-position: 50px;
+    padding-top: 60px;
+    margin-bottom: 63px;
   }
 }
 
@@ -29,12 +31,12 @@
 
   @media (min-width: @tablet-width) {
     .font-size(43px, 700, 50px);
-    margin-bottom: 39px;
   }
 
   @media (min-width: @desktop-width) {
     .font-size(53px, 700, 57px);
     padding-left: 175px;
+    padding-top: 22px;
   }
 }
 
@@ -63,17 +65,34 @@
     padding-bottom: 61px;
     padding-top: 0;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 44px;
+    padding-right: 61px;
+  }
 }
 
 .reviews__user-name {
   .font-size(17px, 700, 24px);
   font-style: normal;
+
+  @media (min-width: @tablet-width) {
+    .font-size(18px, 700, 24px);
+  }
+
+  @media (min-width: @desktop-width) {
+    .font-size(17px, 700, 24px);
+  }
 }
 
 .reviews__user-contacts {
   .font-size(17px, 400, 24px);
   display: block;
   padding-top: 5px;
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 23px;
+  }
 }
 
 .reviews__user-link {
@@ -93,6 +112,11 @@
     grid-row-start: 2;
     grid-row-end: 3;
     border: none;
+    padding-bottom: 36px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 57px;
   }
 }
 
@@ -131,6 +155,10 @@
   @media (min-width: @tablet-width) {
     .font-size(17px, 700, 20px);
     order: 2;
-    margin-top: 0;
+    margin-top: -5px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 23px;
   }
 }
