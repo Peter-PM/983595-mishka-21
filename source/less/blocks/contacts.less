@@ -133,7 +133,7 @@
 .contacts__email-link {
   .link-style-reset();
   padding-bottom: 3px;
-  border-bottom: 1px solid @basic-green--lighter;
+  border-bottom: 1px solid @basic-green--light;
 
   @media (min-width: @tablet-width) {
     padding-bottom: 4px;
@@ -141,6 +141,14 @@
 
   @media (min-width: @desktop-width) {
     padding-bottom: 8px;
+  }
+
+  &:hover {
+    color: @basic-green--light;
+  }
+
+  &:active {
+    border-style: inherit;
   }
 }
 
@@ -172,5 +180,14 @@
     margin: 0;
     margin-left: 55px;
     margin-top: auto;
+  }
+
+  &:hover {
+    color: @basic-white;
+    background-color: @basic-black--light;
+  }
+
+  &:active {
+    color: rgba(2550, 255, 255, 0.3);
   }
 }
