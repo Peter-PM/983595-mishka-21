@@ -125,6 +125,14 @@
   width: 50%;
   height: 52px;
   border: none;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .reviews__navigation-button:first-child {
@@ -160,5 +168,14 @@
 
   @media (min-width: @desktop-width) {
     margin-top: 23px;
+  }
+
+  &:hover {
+    color: @basic-white;
+    background-color: @basic-black--light;
+  }
+
+  &:active {
+    color: rgba(2550, 255, 255, 0.3);
   }
 }

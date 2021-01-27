@@ -200,6 +200,15 @@
   @media (min-width: @desktop-width) {
     max-width: 700px - 34px;
   }
+
+  &:hover {
+    border-bottom: 2px solid @basic-green;
+  }
+
+  &:focus {
+    border-bottom: 2px solid @basic-green;
+    outline-color: @basic-green;
+  }
 }
 
 // user-name
@@ -288,6 +297,14 @@
   }
 }
 
+.page-form__input-label--radio:hover::after {
+  border: 2px solid @basic-green;
+}
+
+.page-form__input-label--radio:active::after {
+  border: 2px solid @basic-black--opasity-3;
+}
+
 .page-form__input[type="radio"]:checked + .page-form__input-label--radio::before {
   content: "";
   position: absolute;
@@ -371,6 +388,14 @@
   }
 }
 
+.page-form__input-label--checkbox:hover::after {
+  border: 2px solid @basic-green;
+}
+
+.page-form__input-label--checkbox:active::after {
+  border: 2px solid @basic-black--opasity-3;
+}
+
 .page-form__input[type="checkbox"]:checked + .page-form__input-label--checkbox::before {
   width: 20px;
   height: 10px;
@@ -416,6 +441,15 @@
   @media (min-width: @desktop-width) {
     max-width: 700px - 38px;
     margin-bottom: 48px;
+  }
+
+  &:hover {
+    border: 2px solid @basic-green;
+  }
+
+  &:focus {
+    border: 2px solid @basic-green;
+    outline-color: @basic-green;
   }
 }
 

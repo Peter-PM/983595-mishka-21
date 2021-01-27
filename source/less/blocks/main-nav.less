@@ -133,6 +133,23 @@
     padding-bottom: 0;
     width: 149px;
   }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.main-nav__item-link .main-nav__search-icon {
+  fill: @basic-gray--dark;
+}
+
+.main-nav__item-link:hover .main-nav__search-icon {
+  fill: @basic-green;
+  opacity: 1;
 }
 
 .main-nav__list {
@@ -204,6 +221,14 @@
   .link-style-reset();
   .font-size(17px, 700, 24px);
   z-index: 5;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .main-nav__item-link--basic-items {
