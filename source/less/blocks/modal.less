@@ -24,15 +24,35 @@
   padding-top: 28px;
   text-align: center;
   background-color: @basic-white;
-  box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
+  box-shadow: 0 5px 10px @basic-black--opasity-3;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 108px;
+    padding-right: 108px;
+    padding-top: 38px;
+    padding-bottom: 46px;
+    width: 354px;
+    border: 1px solid @basic-gray--dark;
+  }
 }
 
 .modal__title {
   .font-size(25px, 700, 30px);
   margin-bottom: 14px;
+  text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    .font-size(30px, 700, 57px);
+    margin-bottom: 11px;
+  }
 }
 
 .modal__description {
   .font-size(15px, 400, 30px);
-  margin-bottom: 31px;
+  margin-bottom: 22px;
+
+  @media (min-width: @tablet-width) {
+    .font-size(17px, 400, 30px);
+    margin-bottom: 20px;
+  }
 }

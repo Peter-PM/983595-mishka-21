@@ -293,31 +293,22 @@
 
 .main-nav__item-link--before {
   position: relative;
-
-  &::before {
-    content: "";
-    position: absolute;
-    width: 21px;
-    height: 18px;
-    top: 2px;
-    left: -46px;
-    background-repeat: no-repeat;
-  }
+  display: block;
 }
 
-.main-nav__item-link--basket::before {
-  background-image: url("../img/index/page-header/cart.svg");
-
-  @media (min-width: @tablet-width) {
-    left: -55px;
-  }
-}
-
-.main-nav__item-link--search::before {
-  background-image: url("../img/index/page-header/search.svg");
+.main-nav__search-icon {
+  position: absolute;
+  left: -47px;
+  top: 2px;
 
   @media (min-width: @tablet-width) {
     left: 30px;
+  }
+}
+
+.main-nav__search-icon--backet {
+  @media (min-width: @tablet-width) {
+    left: -50px;
   }
 }
 
@@ -332,6 +323,7 @@
     order: 3;
     padding-top: 20px;
     padding-right: 50px;
+    z-index: 5;
   }
 
   @media (min-width: @desktop-width) {

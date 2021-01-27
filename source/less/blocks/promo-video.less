@@ -62,6 +62,18 @@
 }
 
 .promo-video__title--mobile {
+  height: 94px;
+  padding: 0;
+
+  &::after {
+    content: "Процесс производства";
+    position: absolute;
+    width: 50%;
+    top: 50%;
+    left: 90px;
+    transform: translate(0, -55%);
+  }
+
   @media (min-width: @tablet-width) {
     display: none;
   }
