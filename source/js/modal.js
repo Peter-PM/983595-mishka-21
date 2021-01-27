@@ -9,6 +9,5 @@ for (let modalOn of modalOnList) {
 };
 
 modalOff.onclick = function () {
-  evt.preventDefault();
   modal.classList.add("modal--off");
-};
+}
