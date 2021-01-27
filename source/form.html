@@ -70,7 +70,13 @@
     <div class="page-header__wrapper">
       <nav class="main-nav">
         <div class="main-nav__header">
-          <button class="main-nav__toggle main-nav__toggle--cross" type="button">
+          <!--
+            Кнопка открытия-закрытия мобильного менюю
+            .main-nav__toggle--invis - display:none
+            .main-nav__toggle--burger - стиль при закрытом меню
+            .main-nav__toggle--cross - стиль при открытом меню
+          -->
+          <button class="main-nav__toggle main-nav__toggle--invis main-nav__toggle--cross" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
           <a class="main-nav__logo" href="index.html">

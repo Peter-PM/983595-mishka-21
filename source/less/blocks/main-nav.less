@@ -27,12 +27,21 @@
   }
 }
 
+.main-nav__toggle--invis {
+  display: none;
+}
+
 .main-nav__toggle {
   position: absolute;
   width: 21px;
   height: 21px;
   right: 30px;
   top: 30px;
+
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .main-nav__toggle--cross {
@@ -60,10 +69,6 @@
     transform: rotate(45deg);
     bottom: 10px;
     left: -4px;
-  }
-
-  @media (min-width: @tablet-width) {
-    display: none;
   }
 }
 

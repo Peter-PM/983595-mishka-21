@@ -44,7 +44,13 @@
     <div class="page-header__wrapper">
       <nav class="main-nav">
         <div class="main-nav__header">
-          <button class="main-nav__toggle main-nav__toggle--cross" type="button">
+          <!--
+            Кнопка открытия-закрытия мобильного менюю
+            .main-nav__toggle--invis - display:none
+            .main-nav__toggle--burger - стиль при закрытом меню
+            .main-nav__toggle--cross - стиль при открытом меню
+          -->
+          <button class="main-nav__toggle main-nav__toggle--invis main-nav__toggle--cross" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
           <a class="main-nav__logo" href="index.html">
@@ -106,8 +112,7 @@
   <main class="page-main">
     <section class="main-catalog">
       <div class="main-catalog__wrapper">
-        <h1 class="main-catalog__slogan ">
-          Милые штуки ручной работы&nbsp;для&nbsp;дома
+        <h1 class="main-catalog__slogan ">Милые штуки ручной работы&nbsp;для&nbsp;дома
         </h1>
         <ul class="main-catalog__list">
           <li class="main-catalog__item main-catalog__item--green main-catalog__item--lamp">
@@ -157,8 +162,8 @@
           </picture>
         </div>
         <div class="product-box__buy">
-          <p class="product-box__buy-title">Цена: <span class="product-buy__price">990 руб.</span></p>
-          <a class="product-box__buy-link button modal--on" href="#">Заказать</a>
+          <p class="product-box__buy-title">Цена: <span class="product-box__buyprice">990 руб.</span></p>
+          <a class="product-box__buy-link button product-box__buy-link--modal-on" href="#">Заказать</a>
         </div>
       </div>
     </section>
@@ -245,18 +250,7 @@
         </dl>
       </div>
       <div class="contacts__map">
-        <svg class="contacts__map-pin" width="67" height="101">
-          <use xlink:href="#map-pin"></use>
-        </svg>
-        <picture>
-          <source media="(min-width: 1150px)"
-            srcset="./img/index/contacts/map-desktop.jpg 1x, ./img/index/contacts/map-desktop@2x.jpg 2x">
-          <source media="(min-width: 768px)"
-            srcset="./img/index/contacts/map-tablet.jpg 1x, ./img/index/contacts/map-tablet@2x.jpg 2x">
-          <img class="contacts__map-image" src="./img/index/contacts/map-mobile.jpg"
-            srcset="./img/index/contacts/map-mobile@2x.jpg 2x" height="454"
-            alt="Карта Санкт-Петербурга в районе ДЛТ">
-        </picture>
+        <iframe class="contacts__map-image" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1611754938054!5m2!1sru!2sru" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       </div>
       <div class="contacts__wrapper contacts__wrapper--bottom">
         <a class="contacts__feedback-link button" href="#">Напишите нам</a>
